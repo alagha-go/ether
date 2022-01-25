@@ -13,14 +13,13 @@ import (
 )
 
 var (
-	infuraUrl = "https://mainnet.infura.io/v3/2b4163cd4a6140d0aa3d85e66557c500"
 	ganacheUrl = "http://127.0.0.1:8545"
 	walletAddress = "0x6eA71CE756BCAa7536e765B0Aa15Cb1aE706EF7e"
 )
 
 func main() {
 	ctx := context.Background()
-	client, err := ethclient.DialContext(ctx, infuraUrl)
+	client, err := ethclient.DialContext(ctx, ganacheUrl)
 	HandleError(err)
 	defer client.Close()
 
