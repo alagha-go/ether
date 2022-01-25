@@ -1,0 +1,6 @@
+package wallet
+
+
+func createWallet(){
+	
+}
